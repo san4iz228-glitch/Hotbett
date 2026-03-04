@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>UPL Betting Real</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1>UPL Betting</h1>
+
+    <div id="auth">
+        <input type="text" id="username" placeholder="Ім'я користувача">
+        <button class="btn" onclick="register()">Зареєструватися</button>
+        <button class="btn" onclick="login()">Увійти</button>
+    </div>
+
+    <div id="dashboard" style="display:none;">
+        <div class="header">
+            <h2>Привіт, <span id="user-name"></span></h2>
+            <p>Баланс: <span id="balance">0</span>$</p>
+            <button class="btn small" onclick="logout()">Вийти</button>
+        </div>
+
+        <h3>Матчі УПЛ</h3>
+        <div id="events" class="events"></div>
+
+        <h3>Акції</h3>
+        <div id="promotions" class="events">
+            <div class="event">💰 Бонус 10% на першу ставку!</div>
+            <div class="event">🎁 Щотижневий турнір серед гравців!</div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
